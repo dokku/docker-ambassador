@@ -1,5 +1,7 @@
 # docker-ambassador
 
+[![dokku/ambassador](http://dockeri.co/image/dokku/ambassador)](https://registry.hub.docker.com/u/dokku/ambassador/)
+
 A maintained version of the [ambassador linking](https://github.com/SvenDowideit/dockerfiles/tree/master/ambassador) pattern.
 
 This ambassador image can be used to automatically proxy all exposed ports from the linked container, or to proxy a specified port at a specific IP address or hostname.
