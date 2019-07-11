@@ -4,6 +4,6 @@ MAINTAINER Jose Diaz-Gonzalez <dokku@josediazgonzalez.com>
 
 RUN apk --no-cache add socat
 
-ADD run.sh /bin/run.sh
+ADD entrypoint /entrypoint
 
-ENTRYPOINT ["/bin/run.sh"]
+ENTRYPOINT ["/entrypoint"]
