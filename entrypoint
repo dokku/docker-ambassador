@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 if [ "$1" = "" ]; then
   exposedlinks=$(env | grep _TCP= | sed 's/.*_PORT_\([0-9]*\)_TCP=tcp:\/\/\(.*\):\(.*\)/\2:\3/' | sed 'N;s/\n/ /')
 
