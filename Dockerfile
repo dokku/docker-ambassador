@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-MAINTAINER	dokku@josediazgonzalez.com
+MAINTAINER Jose Diaz-Gonzalez <dokku@josediazgonzalez.com>
 
 RUN apk --no-cache add socat
 
