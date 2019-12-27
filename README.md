@@ -13,7 +13,7 @@ This ambassador image can be used to automatically proxy all exposed ports from 
 docker run --rm --name nginx.1 nginx
 
 # run the ambassador 
-docker run --rm -ti --link nginx.1 -p 9999:80 -p 8888:443 ambassador
+docker run --rm -ti --link nginx.1 -p 9999:80 -p 8888:443 dokku/ambassador
 ```
 
 Running the ambassador container will result in output lke the following.
@@ -40,7 +40,7 @@ In the above example, nginx is running, but no-one can make requests to it. By r
 
 ```shell
 # Assuming the nginx.1 container is on IP `172.17.0.4`
-docker run --rm -p 9999:80 ambassador 172.17.0.4 80
+docker run --rm -p 9999:80 dokku/ambassador 172.17.0.4 80
 ```
 
 You will now be able to make requests to the web server on `http://localhost:9999`
