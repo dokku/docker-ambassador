@@ -2,10 +2,7 @@
 name: build
 
 # yamllint disable-line rule:truthy
-on:
-  push:
-    tags:
-      - '*'
+on: [push, pull_request]
 
 jobs:
   docker:
