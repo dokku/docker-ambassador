@@ -1,6 +1,6 @@
 # docker-ambassador
 
-[![dokku/ambassador](http://dockeri.co/image/dokku/ambassador)](https://registry.hub.docker.com/u/dokku/ambassador/)
+[![dokku/ambassador](http://dockeri.co/image/dokku/ambassador)](https://registry.hub.docker.com/r/dokku/ambassador)
 
 A maintained version of the [ambassador linking](https://github.com/SvenDowideit/dockerfiles/tree/master/ambassador) pattern.
 
