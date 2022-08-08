@@ -18,8 +18,10 @@ docker run --rm -ti --link nginx.1 -p 9999:80 -p 8888:443 dokku/ambassador
 
 Running the ambassador container will result in output lke the following.
 
-    Connecting to 172.17.0.4:80 172.17.0.4:443...
-    2016/01/12 13:03:14 socat[19] E connect(5, AF=2 172.17.0.4:443, 16): Connection refused
+```text
+Connecting to 172.17.0.4:80 172.17.0.4:443...
+2016/01/12 13:03:14 socat[19] E connect(5, AF=2 172.17.0.4:443, 16): Connection refused
+```
 
 You can also proxy exposed ports from more than one container by using more than one --link, but only if there is no duplication of exposed container ports.
 
